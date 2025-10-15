@@ -1,0 +1,439 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="icon" type="image/svg+xml" href="/assets/icons/linkedin.svg"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Iurii Orlov</title>
+    <link rel="stylesheet" href="/src/style.css"/>
+</head>
+<body>
+
+<main>
+    <header class="fixed top-0 left-0 w-full z-30 h-[var(--header-h)]
+               bg-gradient-to-b from-black/40 to-transparent backdrop-blur-[2px]">
+        <div class="page-container h-full flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <img src="/assets/icons/logo.svg" alt="LinkedIn" class="w-5 h-5"/>
+                <a class="text-white text-sm font-medium tracking-wide"
+                   href="https://www.linkedin.com/in/%D1%8E%D1%80%D0%B8%D0%B9-%D0%BE%D1%80%D0%BB%D0%BE%D0%B2-96588bb2" target="_blank" rel="noopener">
+                    Iurii Orlov
+                </a>
+            </div>
+
+            <nav class="hidden lg:flex items-center gap-8 text-white text-[0.9375rem]">
+                <a href="#about-us" class="hover:text-brand transition">About me</a>
+                <a href="#facts" class="hover:text-brand transition">Interesting facts</a>
+                <a href="#gallery" class="hover:text-brand transition">Photo Gallery</a>
+                <a href="#contacts" class="hover:text-brand transition">Contacts</a>
+            </nav>
+
+            <div class="hidden lg:flex items-center gap-2 text-white text-[0.9375rem]">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" stroke="currentColor"
+                     stroke-width="1.5" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                          d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.272a1.125 1.125 0 00-.852-1.09l-4.423-1.106a1.125 1.125 0 00-1.173.417l-.97 1.293a.75.75 0 01-.822.27 12.035 12.035 0 01-7.143-7.143.75.75 0 01.27-.822l1.293-.97a1.125 1.125 0 00.417-1.173L6.612 3.102A1.125 1.125 0 005.523 2.25H4.25A2.25 2.25 0 002 4.5v2.25z"/>
+                </svg>
+                <a href="tel:+971501352001" class="text-white/90 hover:text-brand">
+                    <span>+971 501 35 20 01</span>
+                </a>
+            </div>
+
+            <button id="burgerBtn" aria-controls="mobileNav" aria-expanded="false" class="lg:hidden" type="button">
+                <svg width="32" height="24" viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                     aria-hidden="true">
+                    <rect width="32" height="3.69231" rx="1.84615" fill="white"/>
+                    <rect x="6.15381" y="9.84613" width="25.8462" height="3.69231" rx="1.84615" fill="white"/>
+                    <rect y="19.6923" width="32" height="3.69231" rx="1.84615" fill="white"/>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+
+    <aside id="mobileNav"
+           class="fixed inset-0 z-50 lg:hidden transition-opacity duration-200 ease-out">
+
+        <img src="/assets/images/hero_bg.png" alt=""
+             class="absolute inset-0 w-full h-full object-cover bg-hero-gradient"/>
+
+        <div class="page-container relative h-full flex flex-col">
+            <div class="flex items-center justify-between px-[--gutter] pt-4">
+                <div class="flex items-center gap-2 text-white">
+                    <img src="/assets/icons/logo.svg" alt="LinkedIn" class="w-5 h-5"/>
+                    <a class="text-sm font-medium tracking-wide"
+                       href="https://www.linkedin.com/in/%D1%8E%D1%80%D0%B8%D0%B9-%D0%BE%D1%80%D0%BB%D0%BE%D0%B2-96588bb2" target="_blank" rel="noopener">
+                        Iurii Orlov
+                    </a>
+                </div>
+
+                <button id="navClose" class="p-2 -m-2 text-white" type="button" aria-label="Close menu">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.8049 0.445609C20.945 0.305559 21.1113 0.194464 21.2943 0.118669C21.4773 0.0428743 21.6734 0.00386374 21.8715 0.00386374C22.0696 0.00386374 22.2658 0.0428743 22.4488 0.118669C22.6318 0.194464 22.7981 0.305559 22.9382 0.445609C23.0783 0.58566 23.1894 0.751924 23.2652 0.934909C23.341 1.11789 23.38 1.31402 23.38 1.51208C23.38 1.71014 23.341 1.90626 23.2652 2.08925C23.1894 2.27223 23.0783 2.4385 22.9382 2.57855L13.8271 11.6908L22.9382 20.8031L23.1326 21.0395C23.3226 21.3298 23.4069 21.6767 23.3712 22.0218C23.3356 22.3669 23.1822 22.6893 22.9368 22.9346C22.6914 23.18 22.369 23.3334 22.0238 23.369C21.6786 23.4047 21.3317 23.3204 21.0413 23.1304L20.8049 22.936L11.6911 13.8237L2.57738 22.9386C2.43714 23.0787 2.27068 23.1897 2.0875 23.2655C1.90433 23.3412 1.70803 23.3801 1.50981 23.38C1.3116 23.3799 1.11535 23.3407 0.932264 23.2648C0.749183 23.1888 0.582858 23.0775 0.442784 22.9373C0.302711 22.7971 0.191633 22.6307 0.115891 22.4475C0.0401502 22.2644 0.00122963 22.0681 0.00135162 21.8699C0.0014736 21.6717 0.0406358 21.4755 0.116602 21.2925C0.192569 21.1094 0.303852 20.9431 0.444098 20.8031L9.55785 11.6908L0.441471 2.57855L0.249685 2.34214C0.058154 2.05186 -0.0273287 1.7044 0.00766984 1.35841C0.0426684 1.01242 0.196004 0.689109 0.441788 0.443057C0.687572 0.197004 1.01075 0.0432878 1.35675 0.0078606C1.70275 -0.0275666 2.05037 0.057466 2.34094 0.248602L2.57738 0.445609L11.6911 9.55525L20.8049 0.445609Z"
+                              fill="white"/>
+                    </svg>
+                </button>
+            </div>
+
+            <nav class="flex-1 grid place-items-center px-[--gutter] text-white font-alt">
+                <ul class="grid gap-6 text-[clamp(1.4rem,6vw,2rem)] leading-tight text-center">
+                    <li><a href="#about-us" class="hover:text-brand transition">About me</a></li>
+                    <li><a href="#facts" class="hover:text-brand transition">Interesting facts</a></li>
+                    <li><a href="#gallery" class="hover:text-brand transition">Photo Gallery</a></li>
+                    <li><a href="#contacts" class="hover:text-brand transition">Contacts</a></li>
+                </ul>
+            </nav>
+
+            <div class="px-[--gutter] pb-8 flex justify-center">
+                <a href="https://wa.me/971501352001"
+                   class="inline-flex items-center gap-3 text-white text-[clamp(1.1rem,5vw,1.5rem)]">
+                    <img src="/assets/icons/whatsapp.svg" alt="" class="w-6 h-6"/>
+                    <span>WhatsApp</span>
+                </a>
+            </div>
+        </div>
+    </aside>
+
+    <section id="hero"
+             class="no-section-top relative pt-[var(--header-h)] overflow-hidden text-white lg:pb-[38px]">
+        <img src="/assets/images/hero_bg.png" alt=""
+             class="absolute inset-0 w-full h-full object-cover bg-hero-gradient"/>
+
+        <div class="relative z-10 page-container mx-[calc(var(--gutter)*-1)]">
+            <h1 class="relative z-10 text-center font-regular leading-tight
+               text-[clamp(2.5rem,3vw+1rem,3rem)]
+               lg:text-[clamp(5rem,7vw,5rem)]">
+                Iurii Orlov
+            </h1>
+
+            <div class="mt-[1.3889rem] mb-[2.3889rem] lg:hidden flex justify-center">
+                <a href="https://wa.me/971501352001"
+                   class="inline-flex items-center gap-2 rounded-full
+            bg-[#1E1E1ECC] px-4 py-2 text-[0.9375rem]">
+                    <img src="/assets/icons/whatsapp.svg" alt="" class="w-4 h-4"/>
+                    WhatsApp
+                </a>
+            </div>
+
+            <div class="mt-6 grid grid-cols-2 gap-x-8 gap-y-8 items-start
+            lg:mt-8 lg:grid-cols-3 lg:gap-12 lg:items-stretch
+            max-w-[1150px] mx-auto">
+
+                <div class="order-1 col-span-1 space-y-10 text-center lg:text-left mx-out lg:mx-0">
+                    <div>
+                        <p class="font-semibold text-[0.8333rem] lg:text-[1.3333rem]">Founder</p>
+                        <p class="text-white/80 text-[0.6667rem] lg:text-[1.1111rem]">Orlov Real Estate Brokers</p>
+                    </div>
+                    <div>
+                        <p class="font-semibold text-[0.8333rem] lg:text-[1.3333rem]">12 years</p>
+                        <p class="text-white/80 text-[0.6667rem] lg:text-[1.1111rem]">of Work Experience</p>
+                    </div>
+                </div>
+
+                <div class="order-3 col-span-1 space-y-10 text-center lg:text-right mx-out lg:mx-0">
+                    <div>
+                        <p class="font-semibold text-[0.8333rem] lg:text-[1.3333rem]">$100 Million</p>
+                        <p class="text-white/80 text-[0.6667rem] lg:text-[1.1111rem]">Investment transactions</p>
+                    </div>
+                    <div>
+                        <p class="font-semibold text-[0.8333rem] lg:text-[1.3333rem]">Specialization</p>
+                        <p class="text-white/80 text-[0.6667rem] lg:text-[1.1111rem]">
+                            Investments in residential &amp; commercial properties
+                            <span class="block lg:inline">in the UAE</span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="order-3 col-span-2 relative flex justify-center
+            lg:order-2 lg:col-span-1 lg:col-start-2
+            lg:flex lg:items-end lg:justify-center
+            lg:relative lg:z-20 lg:-mt-16 xl:-mt-11">
+
+                    <img src="/assets/images/hero_person.png" alt="Threedeesh"
+                         class="block mx-auto mt-2 max-h-[420px] object-contain
+              lg:mt-0 lg:max-h-[980px] xl:max-h-[980px] lg:object-bottom
+              lg:transform lg:scale-[1.1] xl:scale-[1.2]"/>
+                </div>
+            </div>
+
+            <a href="https://wa.me/971501352001"
+               class="hidden lg:flex items-center gap-3 absolute left-32 bottom-8 z-40
+            px-2 py-3 text-[1.125rem]">
+                <img src="/assets/icons/whatsapp.svg" alt="" class="w-6 h-6"/>
+                WhatsApp
+            </a>
+        </div>
+    </section>
+
+    <section id="about-us" class="page-container">
+        <div class="grid items-start lg:items-center gap-[1.5rem] md:gap-[2rem]
+                lg:grid-cols-12 lg:gap-[2.666rem]">
+            <div class="order-2 lg:order-1 lg:col-span-5">
+                <div class="with-glow mx-auto lg:ml-0 lg:w-[23.44rem]">
+                    <img
+                            src="/assets/images/about_person.png"
+                            alt="Iurii Orlov"
+                            class="relative z-10 block w-full h-auto rounded-[1.5rem]"
+                            loading="lazy"
+                    />
+                </div>
+            </div>
+
+            <div class="order-1 lg:order-2 lg:col-span-6 lg:self-center lg:flex lg:flex-col lg:justify-center">
+                <h2 class="font-regular leading-tight text-[#4584BD] text-[clamp(1.5625rem,1.1rem_+_1.8vw,2.9375rem)]">
+                    About me
+                </h2>
+                <div class="mt-[1rem] lg:mt-[1.25rem] space-y-[1rem]
+                    text-[clamp(1rem,0.95rem_+_0.3vw,1.125rem)]
+                    leading-relaxed text-white">
+                    <p>
+                        With over 15 years of experience in the real estate market, I bring in-depth knowledge of market
+                        trends, profitable investments, and premium properties that inspire and elevate lifestyles.</p>
+
+                    <p>In addition to my real estate expertise, I am a certified coach and psychologist, passionate
+                        about supporting individuals in their journey toward self-improvement, wellness, and a balanced,
+                        healthy lifestyle.</p>
+
+                    <p>If you have any inquiries about real estate opportunities in the UAE or would like to connect
+                        with me personally, I’d be happy to assist.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="facts" class="relative overflow-hidden section-pad">
+        <img src="/assets/images/facts_bg.png" alt="" class="absolute inset-0 w-full h-full object-cover"
+             loading="lazy"/>
+
+        <div class="relative z-10 page-container">
+            <div class="grid gap-y-[0.972rem] lg:gap-[0.972rem] lg:grid-cols-12 lg:grid-rows-2 lg:items-stretch lg:auto-rows-[1fr]">
+                <article class="rounded-[1.75rem] bg-brand/55 ring-1 ring-white/10 backdrop-blur-sm text-white
+               pt-[1.5625rem] pb-[1.5625rem] px-[1.6875rem]
+               lg:pt-[2.5rem] lg:pb-[1.5625rem] lg:px-[1.6875rem]
+               lg:col-span-4 lg:row-span-1 lg:col-start-1 lg:row-start-1
+               lg:flex lg:flex-col lg:h-[14.5rem]">
+                    <h3 class="text-[1.0625rem] lg:text-[1.5rem] font-semibold leading-tight">Family Offices</h3>
+                    <p class="mt-[2.8125rem] lg:mt-auto text-[0.9375rem] lg:text-[1.0625rem] leading-relaxed text-white/90">
+                        Access to exclusive investments with long-term growth.
+                    </p>
+                </article>
+                <article class="rounded-[1.75rem] bg-brand/55 ring-1 ring-white/10 backdrop-blur-sm text-white
+               pt-[1.5625rem] pb-[1.5625rem] px-[1.6875rem]
+               lg:pt-[2.5rem] lg:pb-[1.5625rem] lg:px-[1.6875rem]
+               lg:col-span-4 lg:row-span-1 lg:col-start-1 lg:row-start-2
+               lg:flex lg:flex-col lg:h-[14.5rem]">
+                    <h3 class="text-[1.0625rem] lg:text-[1.5rem] font-semibold leading-tight">Private Investors
+                        (HNWI).</h3>
+                    <p class="mt-[2.8125rem] lg:mt-auto text-[0.9375rem] lg:text-[1.0625rem] leading-relaxed text-white/90">
+                        Sourcing assets with high resale and rental potential.
+                    </p>
+                </article>
+                <article class="rounded-[1.75rem] bg-brand/55 ring-1 ring-white/10 backdrop-blur-sm text-white
+                      pt-[1.5625rem] pb-[1.5625rem] px-[1.6875rem]
+                      lg:pt-[2.5rem] lg:pb-[1.5625rem] lg:px-[1.6875rem]
+                      lg:col-span-4 lg:row-span-2 lg:col-start-5 lg:row-start-1
+                      lg:flex lg:flex-col lg:h-full">
+                    <h3 class="text-[1.0625rem] lg:text-[1.5rem] font-semibold leading-tight">Institutional
+                        Investors</h3>
+                    <p class="mt-[2.8125rem] lg:mt-auto text-[0.9375rem] lg:text-[0.952rem] leading-relaxed text-white/90">
+                        Structuring large-scale deals with sustainable returns.
+                    </p>
+                </article>
+                <article class="rounded-[1.75rem] bg-brand/55 ring-1 ring-white/10 backdrop-blur-sm text-white
+                      pt-[1.5625rem] pb-[1.5625rem] px-[1.6875rem]
+                      lg:pt-[2.5rem] lg:pb-[1.5625rem] lg:px-[1.6875rem]
+                      lg:col-span-4 lg:row-span-2 lg:col-start-9 lg:row-start-1
+                      lg:flex lg:flex-col lg:h-full">
+                    <h3 class="text-[1.0625rem] lg:text-[1.5rem] font-semibold leading-tight">Developers</h3>
+                    <p class="mt-[2.8125rem] lg:mt-auto text-[0.9375rem] lg:text-[0.952rem] leading-relaxed text-white/90">
+                        Strategic consulting, joint ventures, and global scaling.
+                    </p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery">
+        <div class="page-container section-pad">
+            <div class="relative mb-6 md:mb-8">
+                <div class="flex items-left justify-around gap-3 lg:justify-start">
+                    <button
+                            id="galPrev"
+                            class="order-1 grid place-items-center size-9 rounded-full bg-[#0F5686] text-stone-900/80 shadow-sm ring-1 ring-black/5
+                 disabled:opacity-40 disabled:cursor-not-allowed
+                 lg:absolute lg:right-14 lg:top-1/2 lg:-translate-y-1/2"
+                            aria-label="Previous"
+                            type="button"
+                    >
+                        <svg width="16" height="16" viewBox="0 0 16 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.4908 0.706741L1.08527 10.9874C0.890216 11.1785 0.73539 11.4059 0.629735 11.6565C0.52408 11.9071 0.469686 12.1758 0.469686 12.4472C0.469686 12.7187 0.52408 12.9874 0.629735 13.238C0.73539 13.4885 0.890216 13.7159 1.08527 13.9071L11.4908 24.1877C11.6842 24.3804 11.9144 24.5334 12.168 24.6378C12.4216 24.7422 12.6936 24.7959 12.9684 24.7959C13.2431 24.7959 13.5151 24.7422 13.7687 24.6378C14.0223 24.5334 14.2525 24.3804 14.4459 24.1877C14.641 23.9966 14.7958 23.7692 14.9015 23.5186C15.0071 23.2681 15.0615 22.9993 15.0615 22.7279C15.0615 22.4564 15.0071 22.1877 14.9015 21.9371C14.7958 21.6866 14.641 21.4592 14.4459 21.268L5.4972 12.4472L14.4459 3.62644C14.8378 3.23927 15.058 2.71414 15.058 2.16659C15.058 1.89547 15.0039 1.62701 14.8989 1.37653C14.7939 1.12605 14.64 0.898452 14.4459 0.706741C14.0541 0.319564 13.5226 0.102051 12.9684 0.102051C12.6939 0.102051 12.4222 0.155452 12.1687 0.259205C11.9152 0.362958 11.6848 0.515031 11.4908 0.706741Z"
+                                  fill="white"/>
+                        </svg>
+
+                    </button>
+
+                    <h2 class="order-2 text-center font-normal leading-tight text-white text-[25px] lg:text-[35px]">
+                        Photo Gallery
+                    </h2>
+
+                    <button
+                            id="galNext"
+                            class="order-3 grid place-items-center size-9 rounded-full bg-[#0F5686] text-stone-900/80 shadow-sm ring-1 ring-black/5
+                 disabled:opacity-40 disabled:cursor-not-allowed
+                 lg:absolute lg:right-0 lg:top-1/2 lg:-translate-y-1/2"
+                            aria-label="Next"
+                            type="button"
+                    >
+                        <svg width="16" height="16" viewBox="0 0 16 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.50923 0.706741L14.9147 10.9874C15.1098 11.1785 15.2646 11.4059 15.3703 11.6565C15.4759 11.9071 15.5303 12.1758 15.5303 12.4472C15.5303 12.7187 15.4759 12.9874 15.3703 13.238C15.2646 13.4885 15.1098 13.7159 14.9147 13.9071L4.50923 24.1877C4.31576 24.3804 4.08559 24.5334 3.83199 24.6378C3.57839 24.7422 3.30637 24.7959 3.03164 24.7959C2.75691 24.7959 2.4849 24.7422 2.2313 24.6378C1.9777 24.5334 1.74753 24.3804 1.55406 24.1877C1.359 23.9966 1.20418 23.7692 1.09853 23.5186C0.992873 23.2681 0.938477 22.9993 0.938477 22.7279C0.938477 22.4564 0.992873 22.1877 1.09853 21.9371C1.20418 21.6866 1.359 21.4592 1.55406 21.268L10.5028 12.4472L1.55406 3.62644C1.16218 3.23927 0.942029 2.71414 0.942029 2.16659C0.942029 1.89547 0.996077 1.62701 1.10109 1.37653C1.2061 1.12605 1.36002 0.898452 1.55406 0.706741C1.94594 0.319564 2.47744 0.102051 3.03164 0.102051C3.30606 0.102051 3.57778 0.155452 3.83131 0.259205C4.08483 0.362958 4.31519 0.515031 4.50923 0.706741Z"
+                                  fill="white"/>
+                        </svg>
+
+                    </button>
+                </div>
+            </div>
+
+            <div
+                    id="galTrack"
+                    class="flex gap-6 md:gap-8 overflow-x-auto scroll-smooth snap-x snap-mandatory
+             [-webkit-overflow-scrolling:touch] [scrollbar-width:none] touch-pan-x"
+            >
+                <article class="snap-center shrink-0 basis-[85%] md:basis-[70%] lg:basis-[48%]">
+                    <div class="relative overflow-hidden rounded-3xl shadow-sm">
+                        <img src="/assets/images/gallery_1.png" alt="Partnership Mereha Group"
+                             class="w-full aspect-[4/3] object-cover"/>
+                        <div class="absolute left-3 bottom-3 md:left-4 md:bottom-4">
+                            <div class="rounded-xl bg-black/55 text-white px-3 py-2 text-[13px] lg:text-[17px]">
+                                Partnership Mereha Group
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="snap-center shrink-0 basis-[85%] md:basis-[70%] lg:basis-[48%]">
+                    <div class="relative overflow-hidden rounded-3xl shadow-sm">
+                        <img src="/assets/images/gallery_2.png" alt="Podcast with Yury Titov"
+                             class="w-full aspect-[4/3] object-cover"/>
+                        <div class="absolute left-3 bottom-3 md:left-4 md:bottom-4">
+                            <div class="rounded-xl bg-black/55 text-white px-3 py-2 text-[13px] lg:text-[17px]">
+                                Podcast with Yury Titov
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacts" class="page-container section-pad">
+        <div class="grid lg:grid-cols-12 gap-6 lg:gap-10 items-start">
+            <div class="lg:col-span-7">
+                <h2 class="font-normal text-white leading-tight
+         text-[clamp(1.389rem,1.1rem_+_1.2vw,1.944rem)]
+         mb-[clamp(1.389rem,0.9rem_+_0.9vw,2.278rem)]
+         text-center">
+                    I’ll be happy to cooperate
+                </h2>
+
+                <div class="mt-6 grid grid-cols-1 lg:grid-cols-2 gap-[1.389rem] lg:gap-[2rem]">
+                    <a href="https://www.linkedin.com/in/%D1%8E%D1%80%D0%B8%D0%B9-%D0%BE%D1%80%D0%BB%D0%BE%D0%B2-96588bb2" target="_blank" rel="noopener"
+                       class="rounded-2xl bg-stone-400 px-6 py-[1.389rem] shadow-sm ring-1 ring-brand/40">
+                        <div class="flex flex-col items-center text-center">
+                            <img src="/assets/icons/linkedin.svg" alt="Linkedin" class="w-6 h-6"/>
+                            <div class="mt-2 text-[1.5rem] font-regular font-alt leading-none text-white">Linkedin</div>
+                            <div class="mt-2 text-white text-[0.889rem]">Iurii Orlov</div>
+                        </div>
+                    </a>
+
+                    <a href="https://t.me/+971501352001" target="_blank" rel="noopener"
+                       class="rounded-2xl bg-brand px-6 py-[1.389rem] shadow-sm ring-1 ring-brand/40">
+                        <div class="flex flex-col items-center text-center">
+                            <img src="/assets/icons/telegram.svg" alt="Telegram" class="w-6 h-6"/>
+                            <div class="mt-2 text-[1.5rem] font-regular font-alt leading-none text-white">Telegram</div>
+                            <div class="mt-2 text-white text-[0.889rem]">+971 501 35 20 01</div>
+                        </div>
+                    </a>
+
+                    <a href="https://www.instagram.com/Iurii_Orlov"
+                       target="_blank" rel="noopener"
+                       class="rounded-2xl bg-brand px-6 py-[1.389rem] shadow-sm ring-1 ring-brand/40">
+                        <div class="flex flex-col items-center text-center">
+                            <img src="/assets/icons/instagram.svg" alt="Instagram" class="w-6 h-6"/>
+                            <div class="mt-2 text-[1.5rem] font-regular font-alt leading-none text-white">Instagram
+                            </div>
+                            <div class="mt-2 text-white text-[0.889rem]">@Iurii_Orlov</div>
+                        </div>
+                    </a>
+
+                    <a href="https://wa.me/971501352001" target="_blank" rel="noopener"
+                       class="rounded-2xl bg-brand px-6 py-[1.389rem] shadow-sm ring-1 ring-brand/40">
+                        <div class="flex flex-col items-center text-center">
+                            <img src="/assets/icons/whatsapp.svg" alt="WhatsApp" class="w-6 h-6">
+                            <div class="mt-2 text-[1.5rem] font-regular font-alt leading-none text-white">WhatsApp</div>
+                            <div class="mt-2 text-white text-[0.889rem]">+971 501 35 20 01</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="lg:col-span-5">
+                <div class="mt-8 lg:mt-2 flex justify-center lg:justify-end">
+                    <img src="/assets/images/photo_contacts.png" alt="Iurii Orlov"
+                         class="w-[min(18rem,75vw)] lg:w-[22.44rem] h-auto object-contain"/>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="bg-footer text-white">
+    <div class="grid gap-8 md:grid-cols-2 items-start page-container section-pad">
+        <div>
+            <h2 class="font-light leading-tight text-[clamp(1.722rem,3vw,2.5rem)]">
+                Orlov Real Estate Brokers
+            </h2>
+
+            <p class="hidden md:block mt-[6.83rem] text-white opacity-50 text-[clamp(0.944rem,0.9vw,1.111rem)]">
+                Powered by Zack AI
+            </p>
+        </div>
+
+        <nav class="md:justify-self-end mt-[0.928rem]" aria-label="Footer">
+            <ul class="flex flex-wrap md:justify-end gap-x-6 gap-y-3 text-[1rem]">
+                <li><a href="#about-us" class="hover:text-brand">About me</a></li>
+                <li><a href="#facts" class="hover:text-brand">Interesting facts</a></li>
+                <li><a href="#gallery" class="hover:text-brand">Photo Gallery</a></li>
+                <li><a href="#contacts" class="hover:text-brand">Contacts</a></li>
+            </ul>
+
+            <p class="md:hidden mt-[5rem] text-white opacity-50 text-[clamp(0.944rem,0.9vw,1.111rem)]">
+                Powered by Zack AI
+            </p>
+
+            <div class="mt-[3.278rem] md:mt-[7.167rem] flex gap-6 md:justify-end">
+                <a href="https://www.linkedin.com/in/%D1%8E%D1%80%D0%B8%D0%B9-%D0%BE%D1%80%D0%BB%D0%BE%D0%B2-96588bb2" target="_blank" rel="noopener">
+                    <img src="/assets/icons/linkedin.svg" alt="LinkedIn"
+                         class="h-[2.111rem] w-[2.111rem] opacity-50 transition hover:opacity-100"/>
+                </a>
+                <a href="https://t.me/+971501352001" target="_blank" rel="noopener">
+                    <img src="/assets/icons/telegram.svg" alt="Telegram"
+                         class="h-[2.111rem] w-[2.111rem] opacity-50 transition hover:opacity-100"/>
+                </a>
+                <a href="https://www.instagram.com/Iurii_Orlov"
+                   target="_blank" rel="noopener">
+                    <img src="/assets/icons/instagram.svg" alt="Instagram"
+                         class="h-[2.111rem] w-[2.111rem] opacity-50 transition hover:opacity-100"/>
+                </a>
+                <a href="https://wa.me/971501352001" target="_blank" rel="noopener">
+                    <img src="/assets/icons/whatsapp.svg" alt="WhatsApp"
+                         class="h-[2.111rem] w-[2.111rem] opacity-50 transition hover:opacity-100"/>
+                </a>
+            </div>
+        </nav>
+    </div>
+</footer>
+
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>
